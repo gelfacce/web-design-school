@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+	<title>Walk &amp; Learn</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.smooth-scroll.min.js"></script>
+	<script src="noframework.waypoints.min.js"></script>
+	<script src="inview.min.js"></script>
+    <script src="parallax.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	
+
+	<nav>
+		<ul>
+			<li><a class="smooth" href="#hero">Home</a></li>
+			<li><a class="smooth" href="#walks">Walks</a></li>
+			<li><a class="smooth" href="#guides">Guides</a></li>
+			<li><a class="smooth" href="#map">Map</a></li>
+		</ul>
+	</nav>
+
+	<section id="hero">
+		<header>
+			<img src="images/walk-and-learn.svg" alt="Walk &amp; Learn">
+		</header>
+		
+		<div class="intro">
+			
+			<div class="col">
+				<div>
+					<img src="images/intro-architecture.jpg">
+					<h3>Prague <b>Architecture</b></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel lacus id nibh posuere ullamcorper at efficitur velit.</p>
+				</div>
+				<a href="" class="smooth">Go</a>
+			</div>
+			
+			<div class="col">
+				<div>
+					<img src="images/intro-music.jpg">
+					<h3>City <b>of Music</b></h3>
+					<p>Vestibulum a lacus et odio varius pellentesque. Etiam at pulvinar nunc. Proin ullamcorper a diam commodo.</p>
+				</div>
+				<a href="" class="smooth">Go</a>
+			</div>
+			
+			<div class="col">
+				<div>
+					<img src="images/intro-gardens.jpg">
+					<h3>Secret <b>Gardens</b></h3>
+					<p> Sed lobortis vestibulum aliquam. Proin nec eleifend nulla, eu molestie nisi. Mollis a nunc in, dignissim auctor quam. Aenean ac faucibus velit, eu rhoncus nulla.</p>
+				</div>
+				<a href="" class="smooth">Go</a>
+			</div>
+			
+			<div class="col">
+				<div>
+					<img src="images/intro-ghosts.jpg">
+					<h3>Ghosts <b>and Legends</b></h3>
+					<p>Sed dictum elementum metus, posuere efficitur neque rhoncus sit amet. Morbi non metus ornare, molestie ex suscipit.</p>
+				</div>
+				<a href="" class="smooth">Go</a>
+			</div>
+		
+		</div>
+	
+	</section>
+	
+	<section id="walks">
+		<header>
+			<h1 class="headline">Walks</h1>
+		</header>
+		
+		<div>
+		
+			<article id="architecture">
+				<div></div>
+				<div>
+					<h2>Prague Architecture Walk</h2>
+					<p>Maecenas luctus iaculis turpis at aliquet. Etiam dictum quam non orci maximus, vitae ultrices arcu faucibus. Etiam turpis ligula, dignissim sed libero ac, finibus gravida odio. Morbi sollicitudin velit quis enim laoreet pretium. Maecenas feugiat quam vitae justo placerat maximus. Nulla dictum ut velit eget finibus. Duis aliquet, erat nec fringilla luctus, neque orci rhoncus eros, eget lobortis diam nisi ac dolor. Fusce dapibus varius diam, sit amet consectetur ante ultrices accumsan. Proin a accumsan ligula.</p>
+
+					<footer>
+						<ul>
+							<li>4 hours</li>
+							<li>8 km</li>
+							<li>5 miles</li>
+						</ul>
+						<a href="" class="smooth"><b>10am today</b> (click for map)</a>
+					</footer>
+				
+				</div>
+			</article>
+			
+			<article id="music">
+				<div></div>
+				<div>
+					<h2>City of Music Walk</h2>
+					<p>Aliquam porttitor nulla eu libero sodales vulputate. Duis maximus, nisi eu placerat lacinia, urna risus blandit quam, nec dictum purus arcu et justo. Nulla turpis dui, ultrices a ante id, luctus congue diam. Phasellus finibus diam nec neque elementum, id consequat eros tincidunt. In quis erat dolor. Quisque congue tincidunt fermentum. Aenean ut ornare quam. Quisque id congue leo, et hendrerit elit. Mauris lorem orci, accumsan eget mauris et, tincidunt euismod nunc. Ut viverra vestibulum diam pretium rhoncus.</p>
+
+					<footer>
+						<ul>
+							<li>5 hours</li>
+							<li>7 km</li>
+							<li>4 miles</li>
+						</ul>
+						<a href="" class="smooth"><b>10am today</b> (click for map)</a>
+					</footer>
+				
+				</div>
+			</article>
+			
+			<article id="gardens">
+				<div></div>
+				<div>
+					<h2>Secret Gardens Walk</h2>
+					<p>Maecenas luctus iaculis turpis at aliquet. Etiam dictum quam non orci maximus, vitae ultrices arcu faucibus. Etiam turpis ligula, dignissim sed libero ac, finibus gravida odio. Morbi sollicitudin velit quis enim laoreet pretium. Maecenas feugiat quam vitae justo placerat maximus. Nulla dictum ut velit eget finibus. Duis aliquet, erat nec fringilla luctus, neque orci rhoncus eros, eget lobortis diam nisi ac dolor. Fusce dapibus varius diam, sit amet consectetur ante ultrices accumsan. Proin a accumsan ligula.</p>
+
+					<footer>
+						<ul>
+							<li>4 hours</li>
+							<li>8 km</li>
+							<li>5 miles</li>
+						</ul>
+						<a href="" class="smooth"><b>10am today</b> (click for map)</a>
+					</footer>
+				
+				</div>
+			</article>
+			
+			<article id="ghosts">
+				<div></div>
+				<div>
+					<h2>Ghosts and Legends Walk</h2>
+					<p>Aliquam porttitor nulla eu libero sodales vulputate. Duis maximus, nisi eu placerat lacinia, urna risus blandit quam, nec dictum purus arcu et justo. Nulla turpis dui, ultrices a ante id, luctus congue diam. Phasellus finibus diam nec neque elementum, id consequat eros tincidunt. In quis erat dolor. Quisque congue tincidunt fermentum. Aenean ut ornare quam. Quisque id congue leo, et hendrerit elit. Mauris lorem orci, accumsan eget mauris et, tincidunt euismod nunc. Ut viverra vestibulum diam pretium rhoncus.</p>
+
+					<footer>
+						<ul>
+							<li>3 hours</li>
+							<li>6 km</li>
+							<li>4 miles</li>
+						</ul>
+						<a href="" class="smooth"><b>10am today</b> (click for map)</a>
+					</footer>
+				
+				</div>
+			</article>
+		
+		
+		</div>
+	
+	</section>
+	
+    <section id="guides">
+        <header>
+            <h1 class="headline">Guides</h1>
+        </header>
+
+        <div>
+            <article>
+                <div><img src="images/charles.jpg" alt="" class="guide"></div>
+                <div>
+                    <h2>Charles</h2>
+                    <p>Nam iaculis tristique metus, id sagittis felis porta nec. Pellentesque porttitor felis sit amet leo aliquet laoreet. Cras sollicitudin orci nec sollicitudin elementum. Ut rutrum luctus ligula, in consectetur mauris ultricies a. Etiam facilisis augue in mauris maximus, et molestie ligula tristique. Pellentesque fringilla justo ac est mollis, ac pellentesque felis maximus.</p>
+                </div>
+            </article>
+
+            <article>
+                <div><img src="images/jana.jpg" alt="" class="guide"></div>
+                <div>
+                    <h2>Jana</h2>
+                    <p>Morbi eu ligula velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Mauris sed eros eu nunc feugiat interdum. Donec quam risus, aliquet eget felis at, consequat gravida justo. Ut finibus ultricies hendrerit. Fusce vulputate euismod neque et venenatis. Morbi mollis eleifend mi, nec placerat dolor molestie quis. Sed in sapien imperdiet dui commodo accumsan sed vitae libero.</p>
+                </div>
+            </article>
+
+            <article>
+                <div><img src="images/stanislav.jpg" alt="" class="guide"></div>
+                <div>
+                    <h2>Stanislav</h2>
+                    <p>Donec consectetur varius mollis. Aliquam aliquam augue urna, eget condimentum leo faucibus nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque nibh velit, viverra quis viverra tempus, tristique quis nunc. Morbi quis mi quis neque gravida eleifend eget sed sem. Nullam diam orci, consequat eget congue sit amet, egestas ut massa.</p>
+                </div>
+            </article>
+
+            <article>
+                <div><img src="images/veronika.jpg" alt="" class="guide"></div>
+                <div>
+                    <h2>Veronika</h2>
+                    <p>Phasellus vestibulum maximus enim sit amet sollicitudin. Suspendisse potenti. Vivamus feugiat risus vel ornare pulvinar. Donec convallis rutrum ipsum, in vehicula eros gravida quis. Suspendisse potenti. Ut rutrum consequat leo, et commodo elit iaculis quis. Sed sed tellus auctor risus malesuada dapibus. Phasellus sed dignissim mauris, sollicitudin auctor velit. Nunc tempus laoreet diam.</p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+	
+	<section id="map">
+		<header>
+			<h1 class="headline">Map</h1>
+		</header>
+		
+		<div id="gmap"></div>
+	
+	</section>
+	
+	<footer>
+	
+	</footer>
+	
+</body>
+</html>

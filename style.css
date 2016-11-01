@@ -1,0 +1,416 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i';
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: Ubuntu, sans-serif;
+	margin: 0;
+}
+
+p {
+	line-height: 1.4;
+}
+
+section header {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#hero header img {
+	height: auto;
+	max-width: 600px;
+	margin: 0 1rem 2rem 1rem;
+}
+
+#hero header {
+	background-image: url(images/header-hero.jpg);
+}
+
+#walks header {
+	background-image: url(images/header-walks.jpg);
+}
+
+#guides header {
+	background-image: url(images/header-guides.jpg);
+}
+
+#map header {
+	background-image: url(images/header-map.jpg);
+}
+
+section h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 6rem;
+	letter-spacing: -3px;
+	color: #fff;
+	text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+    
+    position: relative;
+    top: 8rem;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animateh1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    top: 0;
+    opacity: 1;
+}
+
+
+@media all and (max-width: 500px) {
+	
+	section h1 {
+		font-size: 5rem;
+	}
+}
+
+/*
+section div {
+	height: 400px;
+}
+*/
+
+nav {
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	transition: top 0.3s;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+	display: block;
+	padding: 1rem;
+	transition: all .3s;
+}
+
+nav a:hover {
+	background: #3CA80C;
+}
+
+@media all and (max-width: 700px) {
+	
+	nav {
+		display: none;
+	}
+	
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 2rem auto;
+}
+
+.intro .col {
+	flex-basis: 100%; /* equal width */
+	flex-grow: 1;
+	flex-shrink: 1;
+	box-sizing: border-box;
+	padding: 1.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+@media all and (min-width: 600px) {
+	
+	.intro {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.intro .col {
+		flex-basis: 50%;
+	}
+	
+}
+
+@media all and (min-width: 940px) {
+	
+	.intro {
+		flex-wrap: nowrap;
+	}
+	
+	.intro .col {
+		flex-basis: 25%;
+	}
+	
+}
+
+
+.intro h3 {
+	font-weight: 300;
+	font-size: 1.8rem;
+	letter-spacing: -1px;
+}
+
+.intro h3 b {
+	font-weight: 700;
+	display: block;
+}
+
+.intro img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 260px;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.intro a {
+	display: block;
+	background: #777;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	padding: 10px;
+	border-radius: 12px;
+	margin: 1rem 0;
+	transition: all .3s;
+}
+
+.intro a:hover {
+	background: #3CA80C;
+}
+
+#walks > div {
+	margin: 0 1rem;
+}
+
+#walks > div, #guides > div {
+    margin: 0 1rem;
+}
+
+#walks article {
+	max-width: 1200px;
+	margin: 2rem auto;
+	display: flex;
+}
+
+#walks article:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+#walks article div {
+	flex-basis: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+	box-sizing: border-box;
+}
+
+#walks article div:first-child {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+}
+
+article#architecture > div:first-child {
+	background-image: url(images/walk-architecture.jpg);
+}
+
+article#music > div:first-child {
+	background-image: url(images/walk-music.jpg);
+}
+
+article#gardens > div:first-child {
+	background-image: url(images/walk-gardens.jpg);
+}
+
+article#ghosts > div:first-child {
+	background-image: url(images/walk-ghosts.jpg);
+}
+
+#walks article div:last-child {
+	background-color: #555;
+	background-image: url(images/map.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 1.8rem;
+}
+
+@media all and (min-width: 800px) {
+	
+	#walks article {
+		height: 34rem;
+		margin: 4rem auto;
+	}
+	
+	#walks article div {
+		flex-basis: 50%;
+	}
+	
+	#walks article div:first-child {
+		display: block;
+	}
+	
+	#walks article footer {
+		position: absolute;
+		bottom: 1.8rem;
+		left: 1.8rem;
+		right: 1.8rem;
+	}
+	
+}
+
+#walks h2, #walks p, #walks ul, #walks li, #walks a {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+#walks h2 {
+	font-size: 1.4rem;
+	margin-bottom: 1.4rem;
+}
+
+#walks p {
+	font-weight: 300;
+	margin-bottom: 1.4rem;
+}
+
+#walks article footer a {
+	display: block;
+	background-color: #222;
+	text-align: center;
+	padding: 0.8rem;
+	color: #3CA80C;
+	transition: all 0.2s;
+	font-weight: 300;
+}
+
+#walks article footer a:hover {
+	color: #FFF;
+	background-color: #3CA80C;
+}
+
+#walks article footer a b {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#walks article footer ul {
+	display: flex;
+	flex-direction: column;
+}
+
+#walks article footer li {
+	background-color: #333;
+	margin-bottom: 5px;
+	padding: 0.8rem;
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+
+@media all and (min-width: 500px) {
+	
+	#walks article footer ul {
+		flex-direction: row;
+		margin-right: -5px;
+	}
+	
+	#walks article footer li {
+		margin-right: 5px;
+	}
+	
+}
+
+
+
+
+#guides article { 
+  margin: 2rem auto; 
+  display: flex; flex-direction: column; justify-content: space-between; max-width: 1200px;
+}
+
+#guides article > div:first-child { 
+   flex-basis: 20%; align-self: center; 
+} 
+
+#guides article > div:last-child { 
+   flex-basis: 70%; 
+}
+
+.guide { 
+   width: 100%; 
+   height: auto;
+    border-radius: 50%; 
+    max-width: 300px;   
+    display: block;
+    transform: scale(0);
+}
+
+.scaleup {
+    transform: scale(1);
+    transition: all 1s;
+}
+
+#guides h2 { 
+   font-size: 1.4rem; 
+   margin-bottom: 1.4rem;
+}
+
+@media all and (min-width: 700px) {
+
+    #guides article { flex-direction: row; }
+
+    #guides article:nth-child(even) { flex-direction: row-reverse; }
+
+}
+
+#gmap {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
