@@ -62,7 +62,7 @@ function initInfo(map,markers) {
         '</div>';
     html[2] = '<div class="infowin">' + 
         '<h2>Secret Gardens Walk</h2>' +
-        '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel lacus id nibh posuere ullamcorper at efficitur velit.</p>' +
+        '<p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel lacus id nibh posuere ullamcorper at efficitur velit.</p>' +
         '</div>';
     html[3] = '<div class="infowin">' + 
         '<h2>Ghosts and Legends Walk</h2>' +
