@@ -125,10 +125,35 @@ function closeAllInfo(info) {
     
 }
 
+function openInfo(index, map, info, markers) {
+    info[index].open(map, markers[index]);
+}
+
 
 $(document).ready(function() {
 	
-	$('.smooth').smoothScroll({speed: 500});
+    var map = initMap();
+    var markers = initMarkers(map);
+    var info = initInfo(map, markers);
+	
+    
+    $('a[href="#gmap"]').click(function() {
+        
+        closeAllInfo(info);
+        // this -- retrieves the data map 
+        switch( $(this).data('map') ) {
+            // what happens when the user clicks on architecture..
+            case 'architecture': openInfo(0, map, info, markers); break;
+            // cases need break to stop
+            case 'music': openInfo(1, map, info, markers); break;
+            case 'garden': openInfo(2, map, info, markers); break;
+            // default = last case (always)    
+            default: openInfo(3, map, info, markers);
+        }
+        
+    });
+    
+	$('.smooth').smoothScroll({speed: 800});
 	
     $('header').parallax();
 	
@@ -185,8 +210,4 @@ $(document).ready(function() {
         
     });
     
-    var map = initMap();
-    var markers = initMarkers(map);
-    var info = initInfo(map, markers);
-	
 });
